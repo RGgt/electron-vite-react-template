@@ -23,4 +23,8 @@ export default defineConfig({
     ]),
     renderer(),
   ],
+  root: 'src',
+  build: {
+    outDir: '../dist-renderer',
+  },
 });

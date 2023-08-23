@@ -5,6 +5,7 @@
   "scripts": {
     "dev0": "echo \"Error: project template not ready\" && exit 1",
     "build": "tsc && vite build && electron-builder",
+    "b": "tsc && vite build && electron dist-electron/main.js",
     "dev": "vite"
   },
   "keywords": [],

@@ -10,7 +10,7 @@ import path from 'path';
 // │ │ ├── main.js
 // │ │ └── preload.js
 // │
-process.env.DIST = path.join(__dirname, '../dist');
+process.env.DIST = path.join(__dirname, '../dist-renderer');
 process.env.PUBLIC = app.isPackaged
   ? process.env.DIST
   : path.join(process.env.DIST, '../public');
