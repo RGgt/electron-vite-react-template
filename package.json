@@ -1,0 +1,12 @@
+{
+  "name": "electron-vite-react-template",
+  "version": "1.0.0",
+  "description": "A project template to simplify starting a new project with Electron, Vite and React",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "main": "dist-electron/main.js"
+}
