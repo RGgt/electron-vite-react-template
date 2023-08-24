@@ -5,13 +5,13 @@
   "scripts": {
     "dev0": "echo \"Error: project template not ready\" && exit 1",
     "build": "tsc && vite build && electron-builder",
-    "b": "tsc && vite build && electron dist-electron/main.js",
+    "b": "tsc && vite build && electron dist-electron/main/index.js",
     "dev": "vite"
   },
   "keywords": [],
   "author": "",
   "license": "MIT",
-  "main": "dist-electron/main.js",
+  "main": "dist-electron/main/index.js",
   "devDependencies": {
     "@types/react": "^18.2.21",
     "@types/react-dom": "^18.2.7",

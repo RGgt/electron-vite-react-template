@@ -10,14 +10,24 @@ export default defineConfig({
     electron([
       {
         // Main-Process entry file of the Electron App.
-        entry: 'electron-main/main.ts',
+        entry: 'electron-main/main/index.ts',
+        vite: {
+          build: {
+            outDir: 'dist-electron/main',
+          },
+        },
       },
       {
-        entry: 'electron-main/preload.ts',
+        entry: 'electron-main/preload/index.ts',
         onstart(options) {
           // Notify the Renderer-Process to reload the page when the Preload-Scripts build is complete,
           // instead of restarting the entire Electron App.
           options.reload();
+        },
+        vite: {
+          build: {
+            outDir: 'dist-electron/preload',
+          },
         },
       },
     ]),
