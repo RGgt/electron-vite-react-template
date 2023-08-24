@@ -3,6 +3,5 @@ node_modules
 dist-renderer
 dist-electron
 release
-build
 package-lock.json
 pnpm-lock.yaml

@@ -1,6 +1,6 @@
 {
   "name": "electron-vite-react-template",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "description": "A project template to simplify starting a new project with Electron, Vite and React",
   "scripts": {
     "dev0": "echo \"Error: project template not ready\" && exit 1",
