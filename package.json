@@ -5,6 +5,7 @@
   "scripts": {
     "dev0": "echo \"Error: project template not ready\" && exit 1",
     "build": "tsc && vite build && electron-builder",
+    "inspect": "asar extract release/0.0.1/win-unpacked/resources/app.asar debug-inspect",
     "b": "tsc && vite build && electron dist-electron/main/index.js",
     "dev": "vite"
   },

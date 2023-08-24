@@ -41,6 +41,7 @@
 		// This one may not matter in the end.
 		"editor.defaultFormatter": "dbaeumer.vscode-eslint",
 		"cSpell.words": [
+			"asar",
 			"Avenir",
 			"Consolas",
 			"dbaeumer",

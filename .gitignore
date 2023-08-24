@@ -2,6 +2,7 @@ node_modules
 .vscode
 dist-renderer
 dist-electron
+debug-inspect
 release
 package-lock.json
 pnpm-lock.yaml

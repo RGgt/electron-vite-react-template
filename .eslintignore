@@ -1,3 +1,4 @@
 dist-electron/**
 dist-renderer/**
+debug-inspect/**
 release
