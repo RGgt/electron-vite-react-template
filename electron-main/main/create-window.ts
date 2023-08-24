@@ -5,7 +5,7 @@ let win: BrowserWindow | null;
 
 function createWindow() {
   win = new BrowserWindow({
-    icon: path.join(process.env.PUBLIC, 'electron-vite.svg'),
+    icon: path.join(process.env.PUBLIC, 'app-icon.svg'),
     width: 800,
     height: 600,
     webPreferences: {
