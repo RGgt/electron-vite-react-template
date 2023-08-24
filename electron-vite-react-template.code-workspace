@@ -5,6 +5,11 @@
 		}
 	],
 	"settings": {
+		"workbench.colorCustomizations": {
+			"statusBar.background": "#70438f",
+			"titleBar.activeBackground": "#70438f",
+			"titleBar.inactiveBackground": "#523267",
+		},
 		"files.trimTrailingWhitespace": true,
 		"editor.tabSize": 2,
 		"files.insertFinalNewline": true,
