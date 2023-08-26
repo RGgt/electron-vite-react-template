@@ -1,5 +1,6 @@
 import { app, BrowserWindow } from 'electron';
 import path from 'path';
+import { enable } from '@electron/remote/main';
 
 let win: BrowserWindow | null;
 
@@ -17,6 +18,7 @@ function createWindow() {
     },
   });
 
+  enable(win.webContents);
   // Test active push message to Renderer-process.
   win.webContents.on('did-finish-load', () => {
     win?.webContents.send('main-process-message', new Date().toLocaleString());

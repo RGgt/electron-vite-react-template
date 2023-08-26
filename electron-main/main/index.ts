@@ -1,8 +1,11 @@
 import { app, BrowserWindow, ipcMain } from 'electron';
 import { createWindow, quit } from './create-window';
 import { setEnv } from './set-env';
+import { initialize } from '@electron/remote/main';
 
 setEnv();
+
+initialize();
 
 app.on('window-all-closed', () => {
   quit();

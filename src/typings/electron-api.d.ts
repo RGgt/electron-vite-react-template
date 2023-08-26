@@ -4,4 +4,5 @@
 export default interface ElectronApi {
   sendTextMessage: (message: string) => void;
   getJsonFileContent: (fileName: string) => string;
+  getUserJsonFileContentExAsync: (fileName: string, folder: string) => string;
 }
