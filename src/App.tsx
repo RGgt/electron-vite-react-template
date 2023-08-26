@@ -7,6 +7,7 @@ function App() {
     console.log('clicked');
     setCount((count) => count + 1);
     window.electronAPI.sendTextMessage('server_notified:clicked');
+    window.electronAPI.getJsonFileContent('c:\\__temp\\sample.json');
   };
 
   return (

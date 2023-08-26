@@ -9,6 +9,9 @@ function createWindow() {
     height: 600,
     webPreferences: {
       preload: path.join(__dirname, '../preload/index.js'),
+      sandbox: false, // ! Set it to true if you do not need it to be off
+      // sandbox mode turned off so code gets the permissions to work with files and
+      // do other "server-side" type of things
       nodeIntegration: false,
       contextIsolation: true,
     },
