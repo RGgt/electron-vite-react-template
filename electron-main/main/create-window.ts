@@ -8,6 +8,7 @@ function createWindow() {
   win = new BrowserWindow({
     width: 800,
     height: 600,
+    icon: path.join(__dirname, '../../build/icon.png'),
     webPreferences: {
       preload: path.join(__dirname, '../preload/index.js'),
       sandbox: false, // ! Set it to true if you do not need it to be off
