@@ -16,6 +16,7 @@ function createWindow() {
       // do other "server-side" type of things
       nodeIntegration: false,
       contextIsolation: true,
+      webSecurity: false,
     },
   });
 

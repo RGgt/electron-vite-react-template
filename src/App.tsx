@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import './App.css';
+import { ImageView } from './ImageView';
 
 function App() {
   const [count, setCount] = useState(0);
@@ -28,6 +29,7 @@ function App() {
   return (
     <>
       <h1>Vite + React</h1>
+      <ImageView></ImageView>
       <div className="card">
         <button onClick={onClick}>count is {count}</button>
         <p>
