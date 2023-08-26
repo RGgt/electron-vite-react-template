@@ -1,8 +1,9 @@
-import { contextBridge, ipcRenderer } from 'electron';
+import { contextBridge } from 'electron';
+import { sendTextMessageToElectron } from './electron-api/sendMessageToElectron';
 
 function setup() {
   contextBridge.exposeInMainWorld('electronAPI', {
-    sendMessage: (message: string) => ipcRenderer.send('message', message),
+    sendMessage: (message: string) => sendTextMessageToElectron(message),
   });
 }
 
