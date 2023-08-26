@@ -6,7 +6,7 @@ function App() {
   const onClick = () => {
     console.log('clicked');
     setCount((count) => count + 1);
-    window.electronAPI.sendMessage('server_notified:clicked');
+    window.electronAPI.sendTextMessage('server_notified:clicked');
   };
 
   return (
