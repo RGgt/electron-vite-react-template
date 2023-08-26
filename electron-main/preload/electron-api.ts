@@ -1,5 +1,5 @@
 import { contextBridge } from 'electron';
-import { sendTextMessageToElectron } from './electron-api/sendMessageToElectron';
+import { sendTextMessageToElectron } from './electron-api/sendTextMessageToElectron';
 
 function setup() {
   contextBridge.exposeInMainWorld('electronAPI', {
