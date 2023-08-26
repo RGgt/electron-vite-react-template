@@ -1,4 +1,4 @@
-import { app, BrowserWindow, ipcMain } from 'electron';
+import { app, BrowserWindow, ipcMain, net, protocol } from 'electron';
 import { createWindow, quit } from './create-window';
 import { setEnv } from './set-env';
 import { initialize } from '@electron/remote/main';
@@ -11,7 +11,7 @@ app.on('window-all-closed', () => {
   quit();
 });
 
-app.whenReady().then(() => {
+app.whenReady().then(async () => {
   createWindow();
 
   app.on('activate', function () {
@@ -20,6 +20,13 @@ app.whenReady().then(() => {
     if (BrowserWindow.getAllWindows().length === 0) {
       createWindow();
     }
+  });
+
+  const MY_SECURE_PROTOCOL = 'secure-protocol';
+  protocol.handle(MY_SECURE_PROTOCOL, (request) => {
+    return net.fetch(
+      `file:///${request.url.slice(`${MY_SECURE_PROTOCOL}:///`.length)}`,
+    );
   });
 });
 

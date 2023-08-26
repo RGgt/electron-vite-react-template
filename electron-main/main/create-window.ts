@@ -16,7 +16,11 @@ function createWindow() {
       // do other "server-side" type of things
       nodeIntegration: false,
       contextIsolation: true,
-      webSecurity: false,
+      // webSecurity: false, // ! Needed for ImageView to work
+      // webSecurity disables direct access to local files. Therefore ImageView needs
+      // webSecurity turned off, in order to be able to load content. ImageSecureView
+      // works well with webSecurity turned on, as it uses a custom schema protocol to
+      // load resource. That implies more work but is more secure.
     },
   });
 
