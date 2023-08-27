@@ -11,6 +11,27 @@ function ElectronFilePicker() {
           name: 'all files',
           extensions: ['*'],
         },
+        {
+          name: 'json files',
+          extensions: ['json'],
+        },
+        {
+          name: 'common text files',
+          extensions: ['json', 'txt', 'js', 'ts', 'jsx', 'tsx', 'css', 'md'],
+        },
+        {
+          name: 'common image files',
+          extensions: [
+            'jpg',
+            'jpeg',
+            'bmp',
+            'png',
+            'gif',
+            'webp',
+            'apng',
+            'webm',
+          ],
+        },
       ],
     );
     if (filenames && filenames.length == 1) {
