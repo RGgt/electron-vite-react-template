@@ -1,0 +1,28 @@
+.imageSecureView{
+  border-radius: 25px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 50%;
+  height: auto;
+}
+
+.secure-mark{
+  color: #ff0000;
+  font-weight: bolder;
+  border: 2px dotted #801c1c;
+  border-radius: 10px;
+  margin: 20px 0;
+  padding: 1rem;
+  text-align: center;
+  background: #c9c9c9;
+}
+.secure-mark i{
+  color: #801c1c;
+}
+.main-button{
+  width:100%;
+  margin-bottom: 20px;
+  background: #150073;
+  color: #c6bcef;
+}

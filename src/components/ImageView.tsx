@@ -1,7 +1,10 @@
 import { useState } from 'react';
+import './ImageView.css';
+import default_image from './../assets/img/image.jpg';
 
 function ImageView() {
-  const IMAGE_SRC__DEFAULT = 'c:\\__temp\\image.jpg';
+  // console.log(logo);
+  const IMAGE_SRC__DEFAULT = default_image;
   const [imageSrc, setImageSrc] = useState(IMAGE_SRC__DEFAULT);
   const onClick = async () => {
     console.log('ImageView.onClick.begin');
@@ -26,9 +29,11 @@ function ImageView() {
 
   return (
     <div>
-      Image View here
-      <img src={imageSrc} />
-      <button onClick={onClick}>Default</button>
+      <img src={imageSrc} className="imageView" />
+      <br />
+      <button onClick={onClick} className="main-button">
+        Select image file
+      </button>
     </div>
   );
 }
