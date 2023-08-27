@@ -2,6 +2,7 @@ import './App.css';
 import { ImageView } from './components/ImageView';
 import { ImageSecureView } from './components/ImageSecureView';
 import { ClicksCounter } from './components/ClicksCounter';
+import { ElectronMessageSender } from './components/electronApiDemonstrators/ElectronMessageSender';
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
       <ImageView></ImageView>
       <div className="card">
         <ClicksCounter></ClicksCounter>
+        <ElectronMessageSender></ElectronMessageSender>
         <p>
           Edit <code>src/App.tsx</code> and save to test HMR
         </p>
