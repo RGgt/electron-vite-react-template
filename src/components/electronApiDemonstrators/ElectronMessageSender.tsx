@@ -4,7 +4,9 @@ function ElectronMessageSender() {
   const [messageToElectron, setMessageToElectron] = useState('Hi, Electron!');
 
   const onClickOnTestSendMessage = async () => {
-    window.electronAPI.sendTextMessage(messageToElectron);
+    const response =
+      await window.electronAPI.sendTextMessage(messageToElectron);
+    console.log(response);
   };
 
   return (

@@ -1,6 +1,6 @@
 import { ipcRenderer } from 'electron';
 
-const sendTextMessageToElectron = (message: string) => {
-  return ipcRenderer.send('message', message);
+const sendTextMessageToElectron = async (message: string) => {
+  return ipcRenderer.sendSync('message', message);
 };
 export { sendTextMessageToElectron };

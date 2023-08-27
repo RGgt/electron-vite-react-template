@@ -30,6 +30,7 @@ app.whenReady().then(async () => {
   });
 });
 
-ipcMain.on('message', (_event, message) => {
-  console.log(message);
+ipcMain.on('message', (event, message) => {
+  console.log(`I, Electron, received this message: '${message}'`); // ! This logs on the server, not on the browser
+  event.returnValue = `Hello there! This is Electron speaking. I just received your message: '${message}'`;
 });
