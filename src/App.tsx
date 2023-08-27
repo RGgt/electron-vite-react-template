@@ -4,6 +4,7 @@ import { ImageSecureView } from './components/ImageSecureView';
 import { ClicksCounter } from './components/ClicksCounter';
 import { ElectronMessageSender } from './components/electronApiDemonstrators/ElectronMessageSender';
 import { ElectronFilePicker } from './components/electronApiDemonstrators/ElectronFilePicker';
+import { ElectronGetFileContent } from './components/electronApiDemonstrators/ElectronGetFileContent';
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
         <ClicksCounter></ClicksCounter>
         <ElectronMessageSender></ElectronMessageSender>
         <ElectronFilePicker></ElectronFilePicker>
+        <ElectronGetFileContent></ElectronGetFileContent>
         <p>
           Edit <code>src/App.tsx</code> and save to test HMR
         </p>
