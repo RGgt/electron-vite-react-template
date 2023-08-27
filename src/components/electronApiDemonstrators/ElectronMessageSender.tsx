@@ -1,4 +1,4 @@
-import './ElectronMessageSender.css';
+import './shared.css';
 import { useState } from 'react';
 
 function ElectronMessageSender() {
@@ -13,7 +13,7 @@ function ElectronMessageSender() {
   };
 
   return (
-    <div className="messageDemonstrator">
+    <div className="demonstrator">
       <h2>Sending text messages to Electron</h2>
       <label>
         Your message to Electron:

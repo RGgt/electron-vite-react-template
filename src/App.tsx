@@ -3,6 +3,7 @@ import { ImageView } from './components/ImageView';
 import { ImageSecureView } from './components/ImageSecureView';
 import { ClicksCounter } from './components/ClicksCounter';
 import { ElectronMessageSender } from './components/electronApiDemonstrators/ElectronMessageSender';
+import { ElectronFilePicker } from './components/electronApiDemonstrators/ElectronFilePicker';
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
       <div className="card">
         <ClicksCounter></ClicksCounter>
         <ElectronMessageSender></ElectronMessageSender>
+        <ElectronFilePicker></ElectronFilePicker>
         <p>
           Edit <code>src/App.tsx</code> and save to test HMR
         </p>
