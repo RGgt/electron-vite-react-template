@@ -26,7 +26,7 @@ function createWindow() {
 
   enable(win.webContents);
 
-  win.webContents.openDevTools({ mode: 'undocked' });
+  win.webContents.openDevTools({ mode: 'right' });
 
   // Test active push message to Renderer-process.
   win.webContents.on('did-finish-load', () => {
