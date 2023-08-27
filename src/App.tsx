@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import './App.css';
-import { ImageView } from './ImageView';
-import { ImageSecureView } from './ImageSecureView';
+import { ImageView } from './components/ImageView';
+import { ImageSecureView } from './components/ImageSecureView';
 
 function App() {
   const [count, setCount] = useState(0);
